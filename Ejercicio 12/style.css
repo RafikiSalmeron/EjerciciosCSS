@@ -1,0 +1,13 @@
+article {
+  background-color: red;
+  width:200px;
+  height: 200px;
+  outline: black dotted 10px;
+  margin: 3rem;
+  font-size: 2rem;
+}
+
+article:hover{
+  outline: green dotted 20px;
+  outline-offset: 5px;
+}
