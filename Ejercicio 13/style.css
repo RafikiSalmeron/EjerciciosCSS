@@ -1,0 +1,40 @@
+.grande {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+div:not(.grande){
+  width:1rem;
+  height: 1rem;
+  background-color: rgb(31, 255, 31);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  position: absolute;
+}
+div{
+  border: 8px solid black;
+  text-align: center;
+}
+div:nth-child(2){
+  top: 40px;
+  left: 40px;
+}
+div:nth-child(3){
+  top: 40px;
+  left: 260px;
+}
+
+div:nth-child(4){
+  top: 250px;
+  left: 40px;
+}
+div:nth-child(5){
+  top: 250px;
+  left: 260px;
+}
