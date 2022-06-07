@@ -1,0 +1,9 @@
+article{
+  padding: 3rem;
+  width: 400px;
+  margin: 3rem;
+  border-top: dotted thick green;
+  border-bottom: solid thick red;
+  border-right: dashed 10px blue;
+  border-left: double 10px #000;
+}
