@@ -1,0 +1,88 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 2fr 1.5fr 1.5fr 1.5fr;
+}
+header {
+  background-color: black;
+}
+nav {
+  background-color: red;
+}
+aside{
+  background-color: cornflowerblue;
+}
+article{
+  background-color: rgb(21, 6, 89);
+}
+#banner{
+  background-color: darkorange;
+}
+#extra{
+  background-color: limegreen;
+}
+#image{
+  background-color: aquamarine;
+}
+@media (min-width:768px) and (max-width: 1024px){
+  .container {
+    grid-template-rows: 1fr 5fr 5fr 2.5fr 2.5fr;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  header{
+    grid-column: 1/4;
+  }
+  aside{
+    grid-column: 1/4;
+  }
+  nav{
+    grid-column: 1/2;
+    grid-row: 3/6;
+  }
+  article{
+    grid-row: 3/4;
+    grid-column: 2/4;
+  }
+  #banner{
+    grid-row: 4/5;
+    grid-column: 2/4;
+  }
+  #extra{
+    grid-row: 5/6;
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 1024px){
+  .container {
+    grid-template-rows: 1fr 5fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  header{
+    grid-column: 1/2;
+  }
+  aside{
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  nav{
+    grid-column: 2/5;
+    grid-row: 1/2;
+  }
+  article{
+    grid-row: 3/5;
+    grid-column: 1/3;
+  }
+  #image{
+    grid-row: 3/4;
+    grid-column: 4/5;
+  }
+  #extra{
+    grid-row: 4/5;
+    grid-column: 4/5;
+  }
+  #banner{
+    grid-row: 5/6;
+    grid-column: 1/5;
+  }
+}
